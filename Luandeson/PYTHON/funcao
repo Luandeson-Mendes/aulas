@@ -1,0 +1,25 @@
+frutas = []
+opcao = 1
+while (opcao != 0):
+    print("\n1 - Cadastrar fruta")
+    print("2 - Pesquisar fruta")
+    print("3 - Remover fruta")
+    print("0 - Encerrar o programa")
+    opcao = input("Digite a opção desejada: ")
+    if opcao == 1:
+        fruta = input("Digite a fruta: ")
+        frutas.append(fruta)
+    elif opcao == 2:
+        fruta = input("Digite a fruta: ")
+        if fruta in frutas: 
+            frutas.len(fruta)
+        else:
+            print("A fruta não está na lista!")
+    elif opcao == 3:
+        fruta = input("Digite a fruta para remover: ")
+        if fruta in frutas:
+            frutas.pop(fruta)
+        else:
+            print ("A fruta não está na lista!")
+    elif opcao == 0:
+        print("Programa encerrado!!!!!!!!!!!!!!!!!!")
